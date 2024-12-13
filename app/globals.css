@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 30, 30, 30;
+  --background-end-rgb: 60, 60, 60;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(180deg, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 36px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+  line-height: 1;
+}
+
+.logo:hover {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #cccccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+button, input {
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input:focus {
+  background-color: #444444;
+  color: #ffffff;
+  transform: scale(1.02);
+}
+
+.profile-link {
+  color: #a0c4ff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-link:hover {
+  color: #89b0f0;
+  transform: translateY(-2px);
+}
